@@ -1,0 +1,63 @@
+bird1.jpg
+Big bird from the Muppet show.
+bird, big, yellow, fat
+bird2.jpg
+Picture of a red bird on a branch.
+bird, red, small, branch
+bird3.jpg
+Pretty blue bird.
+bird, blue, small
+bird4.jpg
+Green bird with an orange beak.
+bird, green, big
+bird5.jpg
+Small yellow bird on a branch.
+bird, yellow, small, branch
+bird6.jpg
+Small black bird.
+bird, small, black
+cat1.jpg
+Fat cat.
+cat, orange, big, fat
+cat2.jpg
+It's probably a tiger actually.
+cat, tiger, white, black, striped
+cat3.jpg
+Small striped cat.
+cat, small, striped, white, black
+cat4.jpg
+Angry cat.
+cat, big, angry, brown
+cat5.jpg
+Sad unlucky black cat.
+cat, big, black
+cat6.jpg
+Small cute white cat.
+cat, small, white
+cat7.jpg
+Tired cat.
+small, cat, brown
+dog1.jpg
+Small black dog.
+dog, small, black
+dog2.jpg
+Small white dog.
+dog, small, white
+dog3.jpg
+Brown dog.
+dog, brown, big
+dog4.jpg
+Big white dog.
+dog, big, white
+dog5.jpg
+Small dog with funny ears.
+dog, small, white, brown
+dog6.jpg
+Small yellow dog.
+dog, small, yellow
+dog7.jpg
+Big brown dog.
+dog, brown, big
+dog8.jpg
+Such gallery. Much doge. Wow.
+dog, yellow, doge, big

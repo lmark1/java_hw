@@ -1,0 +1,167 @@
+==================================
+Izraz: 0
+==================================
+Stablo:
+0
+
+==================================
+Izraz: tRue
+==================================
+Stablo:
+1
+
+==================================
+Izraz: Not a
+==================================
+Stablo:
+not
+  A
+
+==================================
+Izraz: A aNd b
+==================================
+Stablo:
+and
+  A
+  B
+
+==================================
+Izraz: a or b
+==================================
+Stablo:
+or
+  A
+  B
+
+==================================
+Izraz: a xoR b
+==================================
+Stablo:
+xor
+  A
+  B
+
+==================================
+Izraz: A and b * c
+==================================
+Stablo:
+and
+  A
+  B
+  C
+
+==================================
+Izraz: a or b or c
+==================================
+Stablo:
+or
+  A
+  B
+  C
+
+==================================
+Izraz: a xor b :+: c
+==================================
+Stablo:
+xor
+  A
+  B
+  C
+
+==================================
+Izraz: not not a
+==================================
+Stablo:
+not
+  not
+    A
+
+==================================
+Izraz: a or b xor c and d
+==================================
+Stablo:
+or
+  A
+  xor
+    B
+    and
+      C
+      D
+
+==================================
+Izraz: a or b xor c or d
+==================================
+Stablo:
+or
+  A
+  xor
+    B
+    C
+  D
+
+==================================
+Izraz: a xor b or c xor d
+==================================
+Stablo:
+or
+  xor
+    A
+    B
+  xor
+    C
+    D
+
+==================================
+Izraz: (a + b) xor (c or d)
+==================================
+Stablo:
+xor
+  or
+    A
+    B
+  or
+    C
+    D
+
+==================================
+Izraz: (d or b) xor not (a or c)
+==================================
+Stablo:
+xor
+  or
+    D
+    B
+  not
+    or
+      A
+      C
+
+==================================
+Izraz: (c or d) mor not (a or b)
+==================================
+Stablo:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token: Type: VARIABLE, Value: MOR, Value is instance of: java.lang.String
+
+==================================
+Izraz: not a not b
+==================================
+Stablo:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token: Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+
+==================================
+Izraz: a and (b or
+==================================
+Stablo:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token found: {Type: EOF, Value: null}.
+
+==================================
+Izraz: a and (b or c
+==================================
+Stablo:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Expected ')' but found EOF.
+
+==================================
+Izraz: a and 10
+==================================
+Stablo:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Lexer has thrown exception: Unexpected number: 10.

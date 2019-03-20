@@ -1,0 +1,5 @@
+{$ FOR sco_re 		"-1"10 "1"$}
+{$       For i 1 "20" 3$}
+This is text in nested loop.
+{$END$}
+{$END$}

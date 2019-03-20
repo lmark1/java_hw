@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Zadaca</string>
+
+    <string name="math">Matematika</string>
+    <string name="stats">Statistika</string>
+
+    <string name="add_string">Zbrajanje</string>
+    <string name="sub_string">Oduzimanje</string>
+    <string name="mul_string">Množenje</string>
+    <string name="div_string">Dijeljenje</string>
+
+    <string name="choose_operation">Odaberi operaciju:</string>
+    <string name="input_numbers">Unesi brojeve:</string>
+    <string name="first_string">Prvi broj</string>
+    <string name="second_string">Drugi broj</string>
+    <string name="calculate_string">Izračunaj</string>
+
+    <string name="send_report">Pošalji izvještaj</string>
+    <string name="ok">OK</string>
+
+    <string name="relative_path">Unestite relativnu putanju...</string>
+    <string name="load">Učitaj</string>
+    <string name="first_name">Ime</string>
+    <string name="last_name">Prezime</string>
+    <string name="phone_number">Telefon</string>
+    <string name="e_mail">E-mail</string>
+    <string name="spouse">Suprug/a</string>
+    <string name="age">Godine</string>
+    <string name="default_path">/ba3s/1498766021876.txt</string>
+</resources>

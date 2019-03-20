@@ -1,0 +1,119 @@
+==================================
+Izraz: 0
+==================================
+Varijable:
+[]
+
+==================================
+Izraz: tRue
+==================================
+Varijable:
+[]
+
+==================================
+Izraz: Not a
+==================================
+Varijable:
+[A]
+
+==================================
+Izraz: A aNd b
+==================================
+Varijable:
+[A, B]
+
+==================================
+Izraz: a or b
+==================================
+Varijable:
+[A, B]
+
+==================================
+Izraz: a xoR b
+==================================
+Varijable:
+[A, B]
+
+==================================
+Izraz: A and b * c
+==================================
+Varijable:
+[A, B, C]
+
+==================================
+Izraz: a or b or c
+==================================
+Varijable:
+[A, B, C]
+
+==================================
+Izraz: a xor b :+: c
+==================================
+Varijable:
+[A, B, C]
+
+==================================
+Izraz: not not a
+==================================
+Varijable:
+[A]
+
+==================================
+Izraz: a or b xor c and d
+==================================
+Varijable:
+[A, B, C, D]
+
+==================================
+Izraz: a or b xor c or d
+==================================
+Varijable:
+[A, B, C, D]
+
+==================================
+Izraz: a xor b or c xor d
+==================================
+Varijable:
+[A, B, C, D]
+
+==================================
+Izraz: (a + b) xor (c or d)
+==================================
+Varijable:
+[A, B, C, D]
+
+==================================
+Izraz: (d or b) xor not (a or c)
+==================================
+Varijable:
+[A, B, C, D]
+
+==================================
+Izraz: (c or d) mor not (a or b)
+==================================
+Varijable:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token: Type: VARIABLE, Value: MOR, Value is instance of: java.lang.String
+
+==================================
+Izraz: not a not b
+==================================
+Varijable:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token: Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+
+==================================
+Izraz: a and (b or
+==================================
+Varijable:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Unexpected token found: {Type: EOF, Value: null}.
+
+==================================
+Izraz: a and (b or c
+==================================
+Varijable:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Expected ')' but found EOF.
+
+==================================
+Izraz: a and 10
+==================================
+Varijable:
+Iznimka: class hr.fer.zemris.bf.parser.ParserException - Lexer has thrown exception: Unexpected number: 10.

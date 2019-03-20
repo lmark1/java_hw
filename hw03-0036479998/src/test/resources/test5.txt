@@ -1,0 +1,2 @@
+This is legal escape \\, this is also legal \{$asdasd$}
+this is invalid \1.

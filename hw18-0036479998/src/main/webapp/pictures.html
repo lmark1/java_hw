@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<style>
+			
+			body {
+    			background-color: yellow;
+			}
+			
+			.button {
+			    background-color: #4CAF50; /* Green */
+			    border: 2px solid #f44336;
+			    color: white;
+			    padding: 15px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 16px;
+			    margin: 10px 10px;
+			    border-radius: 70%;
+			}
+			
+			.button:hover {
+				border-radius: 8px
+			}
+			
+			h1 {
+				margin: 1em 0 0.5em 0;
+				color: #343434;
+				font-weight: normal;
+				font-family: 'Ultra', sans-serif;   
+				font-size: 36px;
+				line-height: 42px;
+				text-transform: uppercase;
+				text-shadow: 0 2px white, 0 3px #777;
+			}
+			
+			.picture {
+				border: 2px solid #f44336;
+				margin: 5px 5px;
+				border-radius: 8px;
+			}
+				
+			.picture:hover {
+				border-radius: 16px;
+			}
+			
+		</style>
+		<meta charset="UTF-8">
+		<title>Picture gallery</title>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/htmlescaping.js"></script>
+		<script type="text/javascript"><!--
+		
+	  		// vidi: http://www.w3schools.com/ajax/default.asp
+	  		
+	  		var xmlhttp;
+			
+			if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			} else {
+				// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			
+			xmlhttp.onreadystatechange = function() {
+				if(xmlhttp.readyState==4 && xmlhttp.status==200) {
+					var text = xmlhttp.responseText;
+					var tags = JSON.parse(text);
+					var html = "";
+					html = "<h1>Available tags:</h1><br>";
+					for (var i = 0; i < tags.length; i++) {
+						html += "<button class=\"button\" onclick=\"buttonClick(\'" + tags[i] + "\')\">"
+						+ tags[i] + "</button>";
+					}
+					document.getElementById("pictureTags").innerHTML = html;
+				}
+			}
+			xmlhttp.open("GET", "servlets/tags?dummy=" + Math.random(), true);
+			xmlhttp.send();
+			
+			// Tag button click function
+			function buttonClick(tag) {
+				var xmlhttp;
+				
+				if (window.XMLHttpRequest) {
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				} else {
+					// code for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				
+				xmlhttp.onreadystatechange = function() {
+					if(xmlhttp.readyState==4 && xmlhttp.status==200) {
+						var text = xmlhttp.responseText;
+						var pictures = JSON.parse(text);
+						var html = "";
+						
+						// Clear current div contents
+						document.getElementById("thumbnails").innerHTML = "&nbps";
+												
+						html += "<h1>Results for the \""+ tag +"\" tag:</h1>:<br>"
+						for (var i = 0; i < pictures.length; i++) {
+							html += "<img class=\"picture\" src=\"servlets/thumbnail-provider?name=" + 
+									pictures[i].name +"\" onclick=\"thumbnailClick(\'"+
+									pictures[i].name +"\')\" />"
+						}
+						
+						document.getElementById("thumbnails").innerHTML = html;
+					}	
+				}
+				
+				xmlhttp.open("GET", "servlets/thumbnails?tag="+tag+"&dummy=" + Math.random(), true);
+				xmlhttp.send();
+			} 
+			
+			// Thumbnail click callbak
+			function thumbnailClick(name) {
+			
+				var xmlhttp;
+				
+				if (window.XMLHttpRequest) {
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				} else {
+					// code for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				
+				xmlhttp.onreadystatechange = function() {
+					if(xmlhttp.readyState==4 && xmlhttp.status==200) {
+						var text = xmlhttp.responseText;
+						var pictures = JSON.parse(text);
+						var html = "";
+						
+						// Add picture
+						html += "<img src=\"servlets/picture-provider?name=" + 
+						pictures[0].name +"\" />";
+						html += "<p>Name: "+ pictures[0].name +"</p>";
+						html += "<p>Description: "+ pictures[0].description+ "</p>";
+						html += "<p>Tags: ";
+						for(var i = 0; i < pictures[0].tags.length; i++) {
+							html += pictures[0].tags[i];
+							
+							if ((i+1) != pictures[0].tags.length) {
+								html += ", "
+							}
+						}
+						
+						html += "</p>";
+						document.getElementById("picture").innerHTML = html;
+					}
+				}
+				
+				xmlhttp.open("GET", "servlets/picture-info?name="+name+"&dummy=" + Math.random(), true);
+				xmlhttp.send();
+			}
+			
+	  	//--></script>
+	</head>
+	
+	<body>
+		<h1>Animal picture gallery</h1>
+		<div id="pictureTags">&nbsp;</div>
+		<div id="thumbnails">&nbsp;</div>
+		<div id="picture">&nbsp;</div>
+	</body>
+
+</html>

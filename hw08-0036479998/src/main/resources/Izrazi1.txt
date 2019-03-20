@@ -1,0 +1,223 @@
+==================================
+Izraz: 0
+==================================
+Tokenizacija:
+Type: CONSTANT, Value: false, Value is instance of: java.lang.Boolean
+Type: EOF, Value: null
+
+==================================
+Izraz: tRue
+==================================
+Tokenizacija:
+Type: CONSTANT, Value: true, Value is instance of: java.lang.Boolean
+Type: EOF, Value: null
+
+==================================
+Izraz: Not a
+==================================
+Tokenizacija:
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: A aNd b
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a or b
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a xoR b
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: A and b * c
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a or b or c
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a xor b :+: c
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: not not a
+==================================
+Tokenizacija:
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a or b xor c and d
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a or b xor c or d
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a xor b or c xor d
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: (a + b) xor (c or d)
+==================================
+Tokenizacija:
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: EOF, Value: null
+
+==================================
+Izraz: (d or b) xor not (a or c)
+==================================
+Tokenizacija:
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: OPERATOR, Value: xor, Value is instance of: java.lang.String
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: EOF, Value: null
+
+==================================
+Izraz: (c or d) mor not (a or b)
+==================================
+Tokenizacija:
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: D, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: VARIABLE, Value: MOR, Value is instance of: java.lang.String
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: CLOSED_BRACKET, Value: ), Value is instance of: java.lang.Character
+Type: EOF, Value: null
+
+==================================
+Izraz: not a not b
+==================================
+Tokenizacija:
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: not, Value is instance of: java.lang.String
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a and (b or
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a and (b or c
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Type: OPEN_BRACKET, Value: (, Value is instance of: java.lang.Character
+Type: VARIABLE, Value: B, Value is instance of: java.lang.String
+Type: OPERATOR, Value: or, Value is instance of: java.lang.String
+Type: VARIABLE, Value: C, Value is instance of: java.lang.String
+Type: EOF, Value: null
+
+==================================
+Izraz: a and 10
+==================================
+Tokenizacija:
+Type: VARIABLE, Value: A, Value is instance of: java.lang.String
+Type: OPERATOR, Value: and, Value is instance of: java.lang.String
+Iznimka: class hr.fer.zemris.bf.lexer.LexerException - Unexpected number: 10.

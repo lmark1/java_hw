@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hw0036479998.android.fer.hr.CalculusActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_operation"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:id="@+id/topText"
+        android:layout_margin="@dimen/margin"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="vertical"
+        android:layout_below="@+id/topText"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_string"
+            android:id="@+id/add"
+            android:checked="true"
+            android:textSize="@dimen/radio_height"
+            android:layout_margin="@dimen/radio_margin"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_string"
+            android:id="@+id/sub"
+            android:checked="false"
+            android:textSize="@dimen/radio_height"
+            android:layout_margin="@dimen/radio_margin"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mul_string"
+            android:id="@+id/mul"
+            android:checked="false"
+            android:textSize="@dimen/radio_height"
+            android:layout_margin="@dimen/radio_margin"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/div_string"
+            android:id="@+id/div"
+            android:checked="false"
+            android:textSize="@dimen/radio_height"
+            android:layout_margin="@dimen/radio_margin"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_numbers"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"/>
+
+    <EditText
+        android:id="@+id/firstInput"
+        android:layout_width="@dimen/edit_width"
+        android:layout_height="@dimen/edit_height"
+        android:hint="@string/first_string"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@id/inputText"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"/>
+
+    <EditText
+        android:id="@+id/secondInput"
+        android:layout_width="@dimen/edit_width"
+        android:layout_height="@dimen/button_height"
+        android:hint="@string/second_string"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@+id/firstInput"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/button_margin"
+        android:text="@string/calculate_string"
+        android:textStyle="bold"
+        android:layout_below="@+id/secondInput"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>

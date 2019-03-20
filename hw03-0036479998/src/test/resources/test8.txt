@@ -1,0 +1,3 @@
+{$ FOR i 1 10$}
+	This is some text.
+{$ENDE$}
